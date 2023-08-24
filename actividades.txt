@@ -1,0 +1,21 @@
+
+¿Por qué un lenguaje de programación sólo puede utilizarse en algunos sistemas operativos y en otros no?. 
+Esto se debe a la variancia que existe entre las distintas plataformas y arquitecturas existentes. Por ejemplo un procesador
+Intel con instrucciones X86-64 no es compatible con un procesador IBM Power PC ya que las instrucciones son fundamentalmente
+distintas. Además si se da el caso de tener procesadores compatibles, es posible que a nivel de sistema operativo hayan diferencias,
+como por ejemplo con Windows y Linux donde los distintos SystemCalls e Interrupciones son incompatibles por lo que es 
+imperativo compilar según el sistema operativo, o utilizando una capa que interprete las instrucciones (como en JAVA) antes
+de ser entregadas al sistema operativo.
+
+¿Qué tipo de máquina virtual soporta virtualBox?. 
+El VirtualBox corresponde a una máquina virtual de Hypervisor tipo 2, o sea vive encima del sistema operativo base. 
+
+¿Qué función cumple el hypervisor en la virtualización?
+Un hipervisor, conocido también como monitor de máquinas virtuales, es un proceso que crea y ejecuta máquinas virtuales. 
+Un hipervisor permite que un ordenador host preste soporte a varias máquinas virtuales invitadas mediante el uso compartido 
+virtual de sus recursos, como la memoria y el procesamiento.
+
+Si tengo más de una máquina virtual instalada, y una se rompe, ¿esto afecta a las demás? ¿por qué?
+Si una máquina virtual se rompe, no debería de afectar a nada más que lo que este contenido en los límites de dicha 
+máquina virtual. Esta es jústamente la gracia de las máquinas virtuales, donde se entrega un entorno controlado y seguro
+que proteja al resto del sistema.
